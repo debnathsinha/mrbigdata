@@ -8,10 +8,12 @@ Setting up:
 1. Get a github account
 2. Set up git (Documentation on github.com) At the end of this, you should be able to authenticate with github doing ssh git@github.com
 3. Fork the hackerdojoml/mrbigdata.git repository (http://help.github.com/fork-a-repo/)
+
 Making changes:
 4. Make your changes (only in the relevant directories: below)
 5. cd <top_of_tree>; bash commit.sh
 8. Send pull request to hackerdojoml (http://help.github.com/pull-requests/)
+
 To pull in upstream changes:
 1. bash student_setup.sh      <Only the first time>
 2. bash merge.sh
@@ -26,19 +28,16 @@ Steps for teacher:
 To add files:
 1. cd <relevant_dir>;
 2. Make changes, including adding, copying, modifying files)
-3. cd <top_of_branch>;  (ls >> src,README)
-4. git add *
-5. git commit -am '<Commit mssg>'
-6. git push origin master
-7. <Optional> Send pull request(http://help.github.com/pull-requests/) 
+3. cd <top_of_branch>;  
+4. bash commit.sh
+5. <Optional> Send pull request(http://help.github.com/pull-requests/) 
 
 To get other people's homework submissions:
 1. Sign in as hackerdojoml
 2. Go to https://github.com/hackerdojoml/mrbigdata/pulls
 3. Pull in all the changes (eg, if you see a request from debnathsinha, do...)
-3.1 git remote add debnathsinha git://github.com/hackerdojoml/mrbigdata.git    <first time only>
-3.2 git fetch debnathsinha
-3.3 git merge debnathsinha/master
+3.1 bash teacher_adduser.sh    <first time only>
+3.2 bash pullhw.sh
 4. Close the pull request
 
 
