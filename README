@@ -10,14 +10,12 @@ Setting up:
 3. Fork the hackerdojoml/mrbigdata.git repository (http://help.github.com/fork-a-repo/)
 Making changes:
 4. Make your changes (only in the relevant directories: below)
-5. cd <top_of_tree>; git add *
-6. git commit -am '<Commit mssg>'
-7. git push origin master (at this point, you should be able to see the changes on github.com/<username>/repo)
+5. cd <top_of_tree>; bash commit.sh
 8. Send pull request to hackerdojoml (http://help.github.com/pull-requests/)
 To pull in upstream changes:
-1. git remote add upstream git://github.com/hackerdojoml/mrbigdata.git   <Only the first time>
-2. git fetch upstream
-3. git merge upstream/master
+1. bash student_setup.sh      <Only the first time>
+2. bash merge.sh
+
 
 NOTE: You only have to do this if you want to contribute directly to hackerdojoml, a much better model is if each group collaborates with each other and elects a leader who collaborates with hackerdojoml, but its a little more complicated, and I am _not_ writing the instructions for that :) 
 
